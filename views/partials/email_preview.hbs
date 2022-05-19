@@ -1,0 +1,13 @@
+<div id="email-preview-header">
+    <div class="preview-header-element link">{{#if showPrevButton}}<div id="previous" class="clickable">Previous</div>{{else}}&nbsp;{{/if}}</div>
+    <div class="preview-header-element title"><h2>Preview of your email</h2></div>
+    <div class="preview-header-element link">{{#if showNextButton}}<div id="next" class="clickable">Next</div>{{/if}}</div>
+</div>
+<div id="email-preview-container">
+<div class="label">To</div>
+<div class="data">{{to}}</div>
+<div class="label">Subject</div>
+<div class="data">{{subject}}</div>
+<div class="label">Text</div>
+<div class="data">{{{text}}}</div>
+</div>

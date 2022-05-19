@@ -1,0 +1,22 @@
+<h3>Your email template</h3>
+<div id="email-template-preview">
+<div class="label">Subject</div>
+<div id="email-subject-preview" class="attribute-data">{{{subject}}}</div>
+<div class="label">Text</div>
+<div id="email-text-preview" class="attribute-data">{{{emailContent}}}</div>
+</div>
+<form id="attribute-details" name="whatever1">
+<table id="email-attribute-table">
+    <tr>
+        {{#each emailAttributes}}
+            <th>{{this}}</th>
+        {{/each}}
+    </tr>
+    </tr>
+    {{#each attributeRows}}
+        {{> email_attribute_row this}}
+    {{/each}}
+</table>
+<button id="add-email-row" class="email-row-button">Add Recipient</button>
+<button id="submit-attributes" class="submit-button">Continue</button><span id="empty-attributes" style="display : none;">Looks like you've missed out some fields, is that okay?</span>
+</form>
